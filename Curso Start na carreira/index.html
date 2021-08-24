@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Gorjetas</title>
+    
+</head>
+<body>
+
+    <div class="container" >
+        <div>
+            <h1 class="title">Calculadora de Gorjetas</h1>        
+        </div>
+        <div>
+            <form class="texto">
+                <label for="bill">
+                    <p>
+                        Qual o valor da conta?
+                    </p> 
+                </label> 
+                <p>
+                    R$ <input type="number" placeholder="100,00" name="bill" id="bill">
+                </p><br>
+
+                <label for="servicequality">
+                    <p>
+                        Como foi o atendimento?
+                    </p>
+                </label>
+                <p>
+                    <select name="servicequality" id="qervicequality">
+                        <option disabled selected  value="0"> -- Escolha uma opção -- </option>
+                        <option value="0.4">40% - Excelente</option>
+                        <option value="0.3">30% - Muito bom</option>
+                        <option value="0.2">20% - Bom </option>
+                        <option value="0.1">10% - Ruim</option>
+                        <option value="0.01">01% - Péssimo</option>
+                        </select>
+                </p> <br>
+                <label for="people">
+                    <p>
+                            Dividir com quantas pessoas?
+                    </p>
+                </label>
+                <p>
+                        <input type="number" placeholder="1" name="People" id="people"> <span> Pessoas </span>
+                </p><br>
+                    
+                <button type="submit">Calcular</button>
+            </form>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="javascript.js">
+</body>
+</html>
