@@ -16,15 +16,17 @@
             <h1 class="title">Calculadora de Gorjetas</h1>        
         </div>
         <div>
-            <form class="texto">
+            <form class="tipsForm" id="tipsForm">
                 <label for="bill">
                     <p>
                         Qual o valor da conta?
                     </p> 
                 </label> 
                 <p>
-                    R$ <input type="number" placeholder="100,00" name="bill" id="bill">
-                </p><br>
+                    R$ <input type="number" placeholder="100,00" name="bill" id="bill" class="formInput" required>
+                </p>
+
+
 
                 <label for="servicequality">
                     <p>
@@ -32,29 +34,38 @@
                     </p>
                 </label>
                 <p>
-                    <select name="servicequality" id="qervicequality">
+                    <select name="serviceQuality" id="serviceQuality" class="formSelect" required>
                         <option disabled selected  value="0"> -- Escolha uma opção -- </option>
                         <option value="0.4">40% - Excelente</option>
                         <option value="0.3">30% - Muito bom</option>
                         <option value="0.2">20% - Bom </option>
                         <option value="0.1">10% - Ruim</option>
                         <option value="0.01">01% - Péssimo</option>
-                        </select>
-                </p> <br>
+                    </select>
+                </p> 
+
+
                 <label for="people">
                     <p>
-                            Dividir com quantas pessoas?
+                        Dividir com quantas pessoas?
                     </p>
                 </label>
                 <p>
-                        <input type="number" placeholder="1" name="People" id="people"> <span> Pessoas </span>
-                </p><br>
+                    <input type="number" placeholder="1" name="people" id="people" class="formInput" required> <span> Pessoas </span>
+                </p>
                     
-                <button type="submit">Calcular</button>
+                <button type="submit" class="formSubmit">Calcular</button>
             </form>
+        </div>
+        <div id="totalTip" class="totalTip">
+            Gorjeta total:
+            R$ <span id="tip"> 0.00 </span>
+            <p id="each" >
+                Cada
+            </p>
         </div>
     </div>
 
-    <link rel="stylesheet" href="javascript.js">
+    <script  type="text/javascript" src="javascript.js"></script>
 </body>
 </html>
